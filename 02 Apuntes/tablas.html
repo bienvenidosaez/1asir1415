@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Plantilla básica</title>
+</head>
+<body>
+
+    <h1>Ejemplos de tablas</h1>
+
+    <table border="1">
+        <caption>Horario de 2º SMR</caption>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>Lengua</td>
+            <td>Inglés</td>
+            <td>Filosofía</td>
+            <td>Geografía</td>
+            <td>Educación Física</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Lengua</td>
+            <td>Inglés</td>
+            <td>Filosofía</td>
+            <td>Geografía</td>
+            <td>Educación Física</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Lengua</td>
+            <td>Inglés</td>
+            <td>Filosofía</td>
+            <td>Geografía</td>
+            <td>Educación Física</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>Lengua</td>
+            <td>Inglés</td>
+            <td>Filosofía</td>
+            <td>Geografía</td>
+            <td>Educación Física</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>Lengua</td>
+            <td>Inglés</td>
+            <td>Filosofía</td>
+            <td>Geografía</td>
+            <td>Educación Física</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>Lengua</td>
+            <td>Inglés</td>
+            <td>Filosofía</td>
+            <td>Geografía</td>
+            <td>Educación Física</td>
+        </tr>
+    </table>
+<!--
+    table[border="1"]>(tr>th*4)+(tr*3>td*4)+(tr>th+td*2+th)
+-->
+    <h1>Su pedido</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre del producto</th>
+            <th>Precio unitario</th>
+            <th>Unidades</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>Reproductor MP3 (80)</td>
+            <td>192.01</td>
+            <td>1</td>
+            <td>192.09</td>
+        </tr>
+        <tr>
+            <td>Reproductor MP3 (80)</td>
+            <td>192.01</td>
+            <td>1</td>
+            <td>192.09</td>
+        </tr>
+        <tr>
+            <td>Reproductor MP3 (80)</td>
+            <td>192.01</td>
+            <td>1</td>
+            <td>192.09</td>
+        </tr>
+        <tr>
+            <th>TOTAL</th>
+            <td>-</td>
+            <td>-</td>
+            <th>207.51</th>
+        </tr>
+    </table>
+
+    <h1>Fusiones de columnas</h1>
+    <table border="1">
+        <tr>
+            <td colspan="3">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td colspan="2">D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td colspan="4">F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+        </tr>
+    </table>
+
+    <h1>Fusiones de filas</h1>
+    <table border="1">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td rowspan="3">G</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
