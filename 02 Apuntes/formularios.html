@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplos de formularios</title>
+</head>
+<body>
+	<h1>Ejemplos de formularios</h1>
+
+	<form action="procesar.php" method="get">
+		<p><label for="nombre">Nombre completo: </label>
+			<input type="text" maxlength="20" size="30" name="nombre" id="nombre" placeholder="Introduzca su nombre">
+		</p>
+			<p><label for="usuario">Usuario: </label>
+			<input type="text" required maxlength="20" size="30" name="usuario" id="usuario" placeholder="Introduzca su nombre de usuario">
+		</p>	
+		<p>
+			<label for="password">Password: </label>
+			<input type="password" required name="password" id="password" placeholder="Introduzca su clave">
+		</p>
+		<h3>Intereses</h3>
+		<p><label for="futbol"><input type="checkbox"  name="futbol" id="futbol"> Fútbol</label></p>
+		<p><label for="baloncesto"><input type="checkbox"  name="baloncesto" id="baloncesto"> Baloncesto</label></p>
+		<p><label for="tenis"><input type="checkbox"  name="tenis" id="tenis"> Tenis</label></p>
+
+		<p>
+			<h3>Sexo</h3>
+			<input type="radio" required name="sexo" value="h" id="hombre"> <label for="hombre">Hombre</label><br>
+			<input type="radio" required name="sexo" value="m" id="mujer"> <label for="mujer">Mujer</label>
+		</p>
+
+		<p><label for="terminos"><input required type="checkbox" name="terminos" id="terminos"> Acepto los términos descritos anteriormente</label></p>
+
+		<p><input type="submit" value="Enviar"></p>
+	</form>
+	
+</body>
+</html>
