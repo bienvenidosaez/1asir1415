@@ -12,11 +12,11 @@
 			<input type="text" maxlength="20" size="30" name="nombre" id="nombre" placeholder="Introduzca su nombre">
 		</p>
 			<p><label for="usuario">Usuario: </label>
-			<input type="text" required maxlength="20" size="30" name="usuario" id="usuario" placeholder="Introduzca su nombre de usuario">
+			<input type="text" maxlength="20" size="30" name="usuario" id="usuario" placeholder="Introduzca su nombre de usuario">
 		</p>	
 		<p>
 			<label for="password">Password: </label>
-			<input type="password" required name="password" id="password" placeholder="Introduzca su clave">
+			<input type="password" name="password" id="password" placeholder="Introduzca su clave">
 		</p>
 		<h3>Intereses</h3>
 		<p><label for="futbol"><input type="checkbox"  name="futbol" id="futbol"> Fútbol</label></p>
@@ -25,13 +25,40 @@
 
 		<p>
 			<h3>Sexo</h3>
-			<input type="radio" required name="sexo" value="h" id="hombre"> <label for="hombre">Hombre</label><br>
-			<input type="radio" required name="sexo" value="m" id="mujer"> <label for="mujer">Mujer</label>
+			<input type="radio" name="sexo" value="h" id="hombre"> <label for="hombre">Hombre</label><br>
+			<input type="radio" name="sexo" value="m" id="mujer"> <label for="mujer">Mujer</label>
+		</p>
+
+		<p>
+			<label for="email">Email: <input type="email" name="email" id="email"></label>
+		</p>
+
+		<p>
+			<label for="web">Página web: <input type="url" name="web" id="web"></label>
+		</p>
+
+		<p>
+			<label for="edad">Edad: <input type="number" min="0" max="110" name="edad" id="edad"></label>
+		</p>
+
+		<p>
+			<label for="fnacimiento">Fecha de nacimiento: <input type="date" name="fnacimiento" id="fnacimiento"></label>
+		</p>
+
+		<p>
+			<label for="hnacimiento">Hora de nacimiento: <input type="time" name="hnacimiento" id="hnacimiento"></label>
 		</p>
 
 		<p><label for="terminos"><input required type="checkbox" name="terminos" id="terminos"> Acepto los términos descritos anteriormente</label></p>
 
-		<p><input type="submit" value="Enviar"></p>
+		<p>
+			<label for="foto">Foto: <input type="file" name="foto" id="foto"></label>
+		</p>
+
+		<p>
+			<input type="reset" value="Borrar datos"> 
+			<input type="submit" value="Enviar">
+		</p>
 	</form>
 	
 </body>
