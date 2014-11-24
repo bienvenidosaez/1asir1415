@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi periódico - Nueva noticia</title>
+</head>
+<body>
+
+	<div id="wrapper">
+		
+		<header>
+			<h1>Mi periódico</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nuevo_autor.html">Nuevo Autor</a></li>
+					<li><a href="nueva_noticia.html">Nueva Noticia</a></li>
+					<li><a href="ayuda.html">Ayuda</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="contenido">
+			
+			<h2>Nueva noticia</h2>
+			<form action="nueva_noticia.php" method="post" enctype="multipart/form-data">
+				
+				<p>
+					<label for="titulo">Titulo de la noticia</label>
+					<input type="text" size="50" name="titulo" id="titulo" placeholder="Titulo de la noticia">
+				</p>
+
+				<p>
+					<label for="fecha">Fecha de la noticia: </label>
+					<input type="date" name="fecha" id="fecha">
+				</p>
+
+				<p>
+					<label for="autor">Autor de la noticia: </label>
+					<select name="autor" id="autor">
+						<option value="" selected>-</option>
+						<option value="1">Autor 1</option>
+						<option value="2">Autor 2</option>
+						<option value="3">Autor 3</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="imagen">Adjuntar imagen: <input type="file" name="imagen"></label>
+				</p>
+
+				<p>
+					<label for="contenido">Contenido de la noticia:</label><br>
+					<textarea name="contendo" id="contenido" cols="50" rows="10">
+						
+					</textarea>
+				</p>
+
+				<p>
+					<input type="submit" value="Guardar noticia"> <button><a href="index.html">Cancelar</a></button>
+				</p>
+
+			</form>
+
+		</section>
+
+		<footer>
+			<hr>
+			<p>Mi periódico © 2014</p>
+		</footer>
+
+	</div>
+	
+</body>
+</html>
