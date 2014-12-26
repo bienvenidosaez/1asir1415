@@ -1,0 +1,15 @@
+body{
+	font-size: 16px;
+}
+
+h1{
+	margin-bottom: 2rem;
+}
+
+section.imagenes{
+	margin-top: 2rem;
+}
+
+section.imagenes img{
+	margin: 1rem;
+}
