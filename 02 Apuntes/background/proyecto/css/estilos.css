@@ -1,0 +1,47 @@
+body{
+    font-size: 16px;
+    background-image: url('../imagenes/fondo_body.jpg');
+    background-repeat: repeat;
+}
+
+h1{
+    color: red;
+}
+
+.cajas article{
+    width: 29%;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 1em;
+    margin-left: 2%;
+}
+
+.cajas article:first-of-type{
+    margin-left: 0;
+    background-color: rgba(0, 0, 255, .4);
+}
+
+.cajas article:nth-of-type(2){
+    background-image: url('../imagenes/twitter.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.cajas article h3{
+    margin-top: 0;
+}
+
+article.texto-grande{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top :2em;
+    padding: 1em;
+    background-color: rgba(0,200,0, .2);
+}
+
+article.texto-grande h2{
+    margin-top: 0;
+}
+
