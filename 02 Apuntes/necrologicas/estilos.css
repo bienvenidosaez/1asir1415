@@ -1,0 +1,79 @@
+body{
+    font-size: 16px;
+    background-color: #babcc8;
+}
+
+h1{
+    color: #494b68;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+article{
+    border: 4px solid #b12d06;
+    margin-bottom: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article.naranja h2{
+    background-color: #b12d06;
+    color: white;
+    padding: .5rem;
+}
+
+article.naranja section:first-of-type{
+    color: black;
+    background-color: #d14608;
+    padding: .5rem;
+}
+
+article.naranja p:first-of-type{
+    margin-top: 0;
+}
+
+article.naranja p:last-of-type{
+    margin-bottom: 0;
+}
+
+article.naranja section:last-of-type{
+    color: black;
+    background-color: #f7a255;
+    padding: .5rem;
+}
+
+article.morado{
+    border-color: #c300ce;   
+}
+
+article.morado h2{
+    background-color: #c300ce;
+    color: white;
+    padding: .5rem;
+}
+
+article.morado section:first-of-type{
+    color: black;
+    background-color: #df65e6;
+    padding: .5rem;
+}
+
+article.morado p:first-of-type{
+    margin-top: 0;
+}
+
+article.morado p:last-of-type{
+    margin-bottom: 0;
+}
+
+article.morado section:last-of-type{
+    color: black;
+    background-color: #f5d0f7;
+    padding: .5rem;
+}

@@ -2,10 +2,24 @@ body{
     font-size: 16px;
     background-image: url('../imagenes/fondo_body.jpg');
     background-repeat: repeat;
+    margin: 0;
 }
 
 h1{
     color: red;
+
+}
+
+section.wrapper{
+    background-image: url('../imagenes/twitter.png');
+    background-repeat: no-repeat;
+    background-position: 50% top;
+    background-attachment: fixed;
+}
+
+section.wrapper h1{
+    margin-top: 0;
+    padding-top: 1em;
 }
 
 .cajas article{
@@ -38,8 +52,10 @@ article.texto-grande{
     border: 1px solid black;
     margin-top :2em;
     padding: 1em;
-    background-color: rgba(0,200,0, .2);
+    background-color: rgba(0,200,0,.2);
+    overflow: auto;
 }
+
 
 article.texto-grande h2{
     margin-top: 0;
