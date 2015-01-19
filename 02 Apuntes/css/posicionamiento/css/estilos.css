@@ -1,0 +1,29 @@
+body{
+    font-size: 16px;
+    margin: 0;
+    background-color: #f7f074;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.imagenes{
+    text-align: center;
+    font-size: 0;
+}
+
+section.imagenes img{
+    margin-right: 1rem;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #484748;
+}
+
+section.imagenes img:nth-of-type(2){
+    position: relative;
+    left: 258px;
+}
+
+
