@@ -4,26 +4,135 @@ body{
     background-color: #f7f074;
 }
 
+section.wrapper{
+    padding-top: 4em;
+}
+
+nav{
+    background-color: black;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+
+
 h2{
     text-align: center;
     text-transform: uppercase;
 }
 
-section.imagenes{
+section.galeria{
     text-align: center;
     font-size: 0;
 }
 
-section.imagenes img{
+section.galeria img{
     margin-right: 1rem;
     padding: 20px;
     background-color: white;
     border: 1px solid #484748;
 }
 
-section.imagenes img:nth-of-type(2){
+section.relativo img:nth-of-type(1){
     position: relative;
-    left: 258px;
 }
+
+section.relativo img:nth-of-type(3){
+    position: relative;
+}
+
+section.absoluto{
+    position: relative;
+    background-color: #98a7a2;
+}
+
+section.absoluto img:nth-of-type(3){
+
+}
+
+a.suscribete{
+    text-decoration: none;
+    color: #ff0700;
+    background-color: white;
+    padding: .5rem .8rem;
+    border: 2px solid #2f2e2e;
+    font-weight: bold;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -86px;
+    z-index: 5;
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+section.flotante{
+    background-color: green;
+    padding: .5em 0;
+}
+
+section.flotante img{
+    float: right;
+    margin: 1.5em;
+    margin-top: 0;
+}
+
+aside.navegacion{
+    background-color: #989696;
+    padding: .5em 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+aside.navegacion a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+aside.navegacion a:first-of-type{
+    float: left;
+}
+
+aside.navegacion a:last-of-type{
+    float: right;
+}
+
+.limpiador{
+    clear: both;
+}
+
+
+
+
 
 
