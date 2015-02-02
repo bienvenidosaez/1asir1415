@@ -1,0 +1,78 @@
+body{
+    font-size: 16px;
+    background-color: #c9c9c9;
+    font-family: 'Arial';
+}
+
+h1{
+    text-align: center;
+}
+
+section.citas{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+section.citas article{
+    padding: 1em;
+    padding-bottom: 1.6em;
+    font-size: 1.2em;
+    min-height: 150px;
+}
+
+section.citas article.marron{
+    border: 3px solid #7c735a;
+    background-color: #d2bd95;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    height: auto;
+}
+
+article.amarillo{
+    border: 3px solid #d6d7b6;
+    background-color: #feffa4;
+    width: 40%;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+article.azul{
+    border: 3px solid #88b7b5;
+    background-color: #a2dfde;   
+    width: 40%;
+    float: right;
+}
+
+article.verde{
+    border: 3px solid #55a257;
+    background-color: #85ff7f;   
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    margin-left: -20%;
+    margin-top: -115px;
+}
+
+article.morado{
+    border: 3px solid #a792a5;
+    background-color: #ffddff;   
+    width: 40%;
+    display: inline-block;
+    z-index: 10;
+    position: relative;
+}
+
+article.rojo{
+    border: 3px solid #744f50;
+    background-color: #c98383;   
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
