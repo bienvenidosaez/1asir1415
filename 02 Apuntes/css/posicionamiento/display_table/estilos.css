@@ -1,0 +1,36 @@
+body{
+  font-size: 16px;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 1em auto;
+}
+
+section.contenido{
+  display: table;
+}
+
+aside{
+  display: table-cell;
+  width: 20%;
+  background-color: #e6c588;
+  vertical-align: top;
+}
+
+section.main{
+  display: table-cell;
+  vertical-align: top;
+  width: 80%;
+  background-color: #c8e68b;
+}
+
+h1{
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Arial';
+  text-shadow: -5px 5px 5px blue;
+  text-align: center;
+  letter-spacing: 5px;
+  color: red;
+}
