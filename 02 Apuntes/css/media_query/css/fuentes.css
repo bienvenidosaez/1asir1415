@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'SohoStd';
+    src: url("../fuentes/sohostd-regular.eot");
+    src: url("../fuentes/sohostd-regular.eot?#iefix") format('embedded-opentype'),
+    url("../fuentes/sohostd-regular.woff") format('woff'),
+    url("../fuentes/sohostd-regular.ttf") format('truetype'),
+    url("../fuentes/sohostd-regular.svg#sohostd-regular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SohoStd-Light';
+    src: url("../fuentes/sohostd-light.eot");
+    src: url("../fuentes/sohostd-light.eot?#iefix") format('embedded-opentype'),
+        url("../fuentes/sohostd-light.woff") format('woff'),
+        url("../fuentes/sohostd-light.ttf") format('truetype'),
+        url("../fuentes/sohostd-light.svg#sohostd-light") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SohoStd-Bold';
+    src: url("../fuentes/sohostd-bold.eot");
+    src: url("../fuentes/sohostd-bold.eot?#iefix") format('embedded-opentype'),
+        url("../fuentes/sohostd-bold.woff") format('woff'),
+        url("../fuentes/sohostd-bold.ttf") format('truetype'),
+        url("../fuentes/sohostd-bold.svg#sohostd-bold") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
