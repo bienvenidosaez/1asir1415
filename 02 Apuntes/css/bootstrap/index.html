@@ -22,6 +22,42 @@
   </head>
 
   <body>
+    <div class="container">
+      <nav class="mibarra navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">1º ASIR</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
 
     <div class="container">
         
@@ -34,27 +70,70 @@
         </div>
         
         <div class="row">
-            <div class="col-sm-6 col-md-2">
-                <h4>Mi primera sección</h4>
+            <div class="col-sm-6 col-md-4">
+                <h4  class="bg-success">Mi primera sección</h4>
+                <p class="bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio atque sed expedita nobis. Expedita quia, possimus illo deleniti porro laborum quas quasi facere maiores deserunt in explicabo doloremque velit! <span class="label label-primary">Novedad!</span></p>
+                <p>
+                  <a class="btn btn-default" href="#"><span class="glyphicon glyphicon-home"></span> Mi primer botón</a><br><br>
+                  <a class="btn btn-primary btn-lg hidden-print" href="#"><span class="glyphicon glyphicon-home"></span> Mi primer botón</a><br><br>
+                  <a class="btn btn-success" href="#">Mi primer botón</a><br><br>
+                  <a class="btn btn-info btn-sm" href="#">Mi primer botón</a><br><br>
+                  <a class="btn btn-warning btn-xs" href="#">Mi primer botón</a><br><br>
+                  <a class="btn btn-danger" disabled href="#">Mi primer botón</a><br><br>
+                  <a class="btn btn-morado" href="#">Mi primer botón</a><br><br>
+                  <div class="btn-group">
+                    <button class="btn btn-primary">Hola</button>
+                    <button class="btn btn-default">Adiós</button>
+                    <button class="btn btn-warning">Hasta luego</button>
+                  </div>
+                  <div class="btn-group">
+                    <button class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+                    <button class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+                    <button class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+                  </div>
+                  <br><br>
+                  <input type="submit" class="btn btn-danger" value="Adiós"><br><br>
+                  <button class="btn btn-morado btn-xs"><span class="glyphicon glyphicon-camera"></span></button>
+                </p>
             </div>
-            <div class="col-sm-6 col-md-offset-3 col-md-2">
+            <div class="col-sm-6 col-md-4">
                 <h4>Mi segunda secció</h4>
                 <p>Hola que ase</p>
+                <p><span class="glyphicon glyphicon-ok icono-ok"></span></p>
+                <p>Ejemplo de dropdown</p>
+                <p>
+                  <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      Mi primer dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li><a role="menuitem" tabindex="-1" href="http://google.es">Ir a Google</a></li>
+                      <li class="divider"></li>
+                      <li><a role="menuitem" tabindex="-1" href="http://iesmiravent.es">Ir al Miravent</a></li>
+                    </ul>
+                  </div>
+                </p>
             </div>
-            <div class="col-sm-12 col-md-offset-3 col-md-2">
+            <div class="col-sm-12 col-md-4">
                 <h4>Mi tercera sección</h4>
+                <p><img class="img-responsive img-rounded" src="http://lorempixel.com/600/400/sports/" alt=""></p>
+                <p><img class="img-responsive img-circle" src="http://lorempixel.com/600/600/sports/" alt=""></p>
+                <p><img class="img-responsive img-thumbnail" src="http://lorempixel.com/600/400/sports/" alt=""></p>
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-offset-3 col-md-6 text-center">
                 <p>loremdsaf asdf añsdfj añsldfkj ñalsdkfj añlskdfj</p>
+                <button class="btn btn-morado btn-lg btn-block">Entrar</button>
             </div>
         </div>
         <br><br>
         <div class="row visible-xs-block">
             <div class="col-md-offset-3 col-md-6 text-center">
                 <p>Ahora me veo porque estoy en un dispositivo móvil</p>
+                <p><a href="#" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-camera"></span> Dame tu foto</a></p>
             </div>
         </div>
         <div class="row">
@@ -101,6 +180,48 @@
                   </tbody>
                 </table>
             </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Profile</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Profile</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="nav nav-pills nav-justified">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Profile</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="nav nav-pills">
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  Desplegable <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Google</a></li>
+                  <li><a href="#">Miravent</a></li>
+                </ul>
+              </li>
+              <li class="active">
+                <a href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
     </div>

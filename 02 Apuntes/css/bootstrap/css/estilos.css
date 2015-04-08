@@ -1,4 +1,31 @@
-/*
-.row > div{
-    border: 1px solid black;
-}*/
+
+.btn-morado{
+  background-color: purple;
+  color: white;
+}
+
+.btn-morado:hover{
+  color: white;
+  background-color: #3C003D;
+}
+
+.bg-success{
+  padding: 15px;
+}
+
+.icono-ok{
+  font-size: 50px;
+  color: green;
+}
+
+.mibarra{
+  background-color: #5996BB;
+}
+
+.mibarra a{
+  color: black !important;
+}
+
+.mibarra li.active a{
+  background-color: #3B657F !important;
+}
