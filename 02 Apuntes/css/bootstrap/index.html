@@ -39,8 +39,9 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#" data-target="#inicio">Inicio <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" data-target="#tabla">Tabla</a></li>
+              <li><a href="#" data-target="#foto">Foto</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -62,7 +63,7 @@
     <div class="container">
         
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="inicio">
                 <h1>Mi primera página en Boostrap <small>Gracias Bienvenido</small></h1>
                 <p class="lead text-center">Como me divierto en clase de css</p>
                 <p class="text-right">Como me divierto en clase de css</p>
@@ -76,8 +77,8 @@
                 <p>
                   <a class="btn btn-default" href="#"><span class="glyphicon glyphicon-home"></span> Mi primer botón</a><br><br>
                   <a class="btn btn-primary btn-lg hidden-print" href="#"><span class="glyphicon glyphicon-home"></span> Mi primer botón</a><br><br>
-                  <a class="btn btn-success" href="#">Mi primer botón</a><br><br>
-                  <a class="btn btn-info btn-sm" href="#">Mi primer botón</a><br><br>
+                  <button data-toggle="modal" data-target="#miModal" class="btn btn-success">Mi primer modal</button><br><br>
+                  <a data-toggle="modal" data-target="#miModal2" class="btn btn-info btn-sm">Mi segundo modal</a><br><br>
                   <a class="btn btn-warning btn-xs" href="#">Mi primer botón</a><br><br>
                   <a class="btn btn-danger" disabled href="#">Mi primer botón</a><br><br>
                   <a class="btn btn-morado" href="#">Mi primer botón</a><br><br>
@@ -126,7 +127,7 @@
         <div class="row">
             <div class="col-md-offset-3 col-md-6 text-center">
                 <p>loremdsaf asdf añsdfj añsldfkj ñalsdkfj añlskdfj</p>
-                <button class="btn btn-morado btn-lg btn-block">Entrar</button>
+                <button  data-toggle="tooltip" data-placement="top" title="Pulsa para entrar en Matrix"  class="btn btn-morado btn-lg btn-block">Entrar</button>
             </div>
         </div>
         <br><br>
@@ -137,7 +138,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-offset-2 col-md-8">
+            <div class="col-md-offset-2 col-md-8" id="tabla">
                <table class="table table-bordered table-hover hidden-xs">
                   <thead>
                     <tr>
@@ -224,10 +225,100 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-sm-12" id="foto">
+            <br><br>
+            <a href="#" data-toggle="modal" data-target="#fotoGrande"><img class="img-thumbnail" src="img/prueba_thumb.jpg" alt=""></a>
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div role="tabpanel">
+
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                <li role="presentation" class="active"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum recusandae, fugiat porro animi beatae, id deserunt et eligendi impedit vel excepturi praesentium necessitatibus eveniet dignissimos sit sequi totam quaerat odio. 1</div>
+                <div role="tabpanel" class="tab-pane" id="profile">Lorem 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officia delectus, minus soluta, aut totam iusto nihil illum numquam non dicta magni voluptate quod! Provident hic quia, nobis a dignissimos.</div>
+                <div role="tabpanel" class="tab-pane" id="messages">Lorem 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur temporibus delectus, ipsam molestiae distinctio. Nobis explicabo magni, facilis dolor, consequatur delectus suscipit dolorum! Alias, inventore facilis laudantium aperiam earum, iure?</div>
+                <div role="tabpanel" class="tab-pane active" id="settings">
+                  <img data-toggle="tooltip" data-placement="right" title="Pulsa para entrar en Matrix" src="http://lorempixel.com/400/200/sports/1" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
     </div>
+
+
+
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Título de mi ejemplo modal</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt reiciendis, at! Dolores velit eaque error, eveniet a repudiandae. Ut iusto placeat commodi in voluptates totam, quos repellendus. Tenetur, ipsum, iste.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Título de mi segundo modal</h4>
+          </div>
+          <div class="modal-body">
+            <p><img src="http://lorempixel.com/400/200/sports/1" alt=""></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="fotoGrande" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Foto en grande</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="img/prueba.jpg" alt=""></p>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
 
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
