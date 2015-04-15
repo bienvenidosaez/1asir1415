@@ -29,3 +29,19 @@
 .mibarra li.active a{
   background-color: #3B657F !important;
 }
+
+.popover-content{
+  background-color: #49C00B;
+}
+
+.popover.top > .arrow:after{
+  border-top-color: #49C00B;
+}
+
+div.item:first-child .carousel-caption{
+  bottom: 35%;
+  background-color: rgba(0,0,0,.3);
+  padding: 1em;
+  border-radius: 1em;
+}
+
